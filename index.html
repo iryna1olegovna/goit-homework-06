@@ -14,7 +14,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css">
 
 <!--Our stylesheet-->
-<link rel="stylesheet" href="./css/style.css">
+<link rel="stylesheet" href="./css/stylesnew.css">
 
   </head>
   <body>
@@ -36,12 +36,12 @@
                  </ul>   
             </nav>   
             <button class="mobile-open-btn" type="button">
-                <svg class="mobile-open-btn-close-icon"
-                <use href="./images/icons2s.svg#icon-burger" width="24" height="24"></use>
+                <svg class="mobile-open-btn-close-icon" width="24" height="24">
+                <use href="./images/icons2s.svg#icon-burger"></use>
                 </svg>
             </button>         
             <address class="list-address">
-                <ul class="list container-flex">
+                <ul class="list contact-box">
                     <li class="address-item">
                         <a class="contacts" href="mailto:info@devstudio.com">info@devstudio.com</a>
                     </li>
@@ -52,17 +52,79 @@
             </address>
             
         </div>
+        <div class="mobile-menu is-open">
+            <button class="modal-close-btn" type="button">
+                <svg class="modal-close-btn-icon" width="8" height="8" aria-label="modal-close-btn">
+                    <use href="./images/icons2s.svg#icon-close"></use>
+                </svg>
+            </button>
+            <nav class="mob-navigation">
+                <ul class="mob-menu-list">
+                    <li class="mob-menu-list-item">
+                        <a class="mob-menu-list-link active" href="./index.html">Studio</a>
+                    </li>
+                    <li class="mob-menu-list-item">
+                        <a class="mob-menu-list-link" href="">Portfolio</a>
+                    </li>
+                    <li class="mob-menu-list-item">
+                        <a class="mob-menu-list-link" href="">Contacts</a>
+                    </li>
+                 </ul>   
+            </nav>  
+            <div class="mobile-box">
+            <address class="mob-list-address">
+                <ul class="list mob-contact-box">
+                    <li class="mob-address-item">
+                        <a class="mob-contacts active" href="tel:+110001111111">+11 (000) 111-11-11</a>
+                    </li>
+                    <li class="mob-address-item">
+                        <a class="mob-contacts" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                    </li>
+                    
+            </ul>
+            </address>  
+            <ul class="social-media-list-mob">
+                <li class="social-media-item">
+                    <a href="" class="social-media-link">
+                        <svg class="social-media-icons" width="24" height="24">
+                            <use href="./images/icons.svg#icon-instagram"></use>
+                         </svg>
+                        </a>
+                </li>
+                <li class="social-media-item">
+                     <a href="" class="social-media-link">
+                        <svg class="social-media-icons" width="24" height="24">
+                             <use href="./images/twlinked.svg#icon-twitter"></use>
+                        </svg>
+                    </a>
+                </li>
+                 <li class="social-media-item">
+                    <a href="" class="social-media-link">
+                        <svg class="social-media-icons" width="24" height="24">
+                            <use href="./images/icons.svg#icon-facebook"></use>
+                        </svg>
+                        </a>
+                </li>
+                <li class="social-media-item">
+                    <a href="" class="social-media-link">
+                        <svg class="social-media-icons" width="24" height="24">
+                            <use href="./images/twlinked.svg#icon-linkedin"></use>
+                        </svg>
+                    </a>
+                </li>
+                </ul> 
+                </div>
+        </div>
     </header>
   <!-- <main> -->
-    HERO SECTION
-    <!-- <section class="hero-section">
+     <section class="hero-section">
         <div class="container">
             <h1 class="hero-page">Effective Solutions for Your Business</h1>
             <button type="button" class="button-order">Order Service</button>
         </div>
-    </section> -->
+    </section> 
     
-    <!-- OUR BENEFITS
+    
     <section class="section">
         <div class="container">
             <h2 class="visually-hidden">Benefits</h2>
@@ -109,15 +171,15 @@
                 </li>
             </ul>
         </div>
-    </section> -->
+    </section> 
     
-    <!-- TEAM SECTION
+
     <section class="section section-background">
-        <div class="container">
+        <div class="container team-container">
             <h2 class="team-title">Our Team</h2>
                 <ul class="team-list">
                     <li class="team-list-item">
-                            <img src="./images/mark.jpg" alt="Mark Guerrero"
+                            <img srcset="./images/team/mark@2x-min.jpg" src="./images/team/mark-min.jpg" alt="Mark Guerrero"
                             width="264"
                             height="260"/>
                             <div class="team-caption">
@@ -279,19 +341,43 @@
             
                 </ul>
         </div>
-    </section> -->
+    </section> 
    
 
-   <!-- OUR PORTFOLIO
+   
    <section class="section">
     <div class="container">
         <h2 class="portfolio-section-title">Our Portfolio</h2>
         <ul class="portfolio-section-list list">
             <li class="portfolio-item">
                 <div class="portfolio-image-container">
-                    <img class="portfolio-image" src="./images/banking-app.jpg" alt="Banking App"
-                    width="360"
-                    height="300"/>
+                    <picture>
+                        <source
+                          srcset="
+                            ./images/desktop/bank-desk-min.jpg  1x,
+                            ./images/desktop/bank-desk@2x-min.jpg 2x
+                          "
+                          media="(min-width: 1158px)"
+                        />
+                        <source
+                          srcset="
+                            ./images/tablet/bank-tab-min.jpg    1x,
+                            ./images/tablet/bank-tab@2x-min.jpg 2x
+                          "
+                          media="(min-width: 768px)"
+                        />
+                        <source
+                          srcset="
+                            ./images/mobile/bank-mob-min.jpg    1x,
+                            ./images/mobile/bank-mob@2x-min.jpg 2x
+                          "
+                          media="(max-width: 767px)"
+                        />
+                        <img
+                          src="./images/mobile/bank-mob-min.jpg"
+                          alt="portfolio picture"
+                        />
+                      </picture>
                     <p class="overlay-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App 
                     · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App
                     </p>
@@ -375,8 +461,8 @@
     </div>
    </section>
 </main>
-    <--!PAgE FOOTER-->
-    <!-- <footer class="footer">
+
+  <footer class="footer">
         <div class="container container-footer">
             <div class="logo-footer-container">
                 <a class="logo-footer link" href="./index.html">Web<span class="logo-footer-span">Studio</span></a>
@@ -440,8 +526,9 @@
                 </form>
             </div>
         </div>
-    </footer> -->
-    <!-- <div class="backdrop is-open">
+    </footer> 
+
+ <div class="backdrop">
         <div class="modal">
             <button class="modal-close-btn" type="button">
                 <svg class="modal-close-btn-icon" width="8" height="8" aria-label="modal-close-btn">
@@ -537,8 +624,9 @@
                                 <use href="./images/icons2s.svg#icon-Vector"></use>
                             </svg>
                         </span>
-                        I accept the terms and conditions of the 
-                        <a class="privacy-policy-link" href="">Privacy Policy</a>
+                        <span>I accept the terms and conditions of the 
+                        <a class="privacy-policy-link" href="">Privacy Policy</a> 
+                        </span>
                     </label>
                 </div>
                 <button class="review-form-button" type="submit">
@@ -546,6 +634,6 @@
                 </button>
             </form>
         </div>
-    </div>  -->
+    </div>  
   </body>
 </html>
