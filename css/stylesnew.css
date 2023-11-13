@@ -91,7 +91,10 @@ button {
 /* --------------mobile styles--------- */
 
 .container {
-    width: 320px;
-    padding: 0;
+    width: 352px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+
 }
-]
