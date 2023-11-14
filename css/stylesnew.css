@@ -110,8 +110,13 @@ button:focus {
 
 /* HEADER  */
 
+.menu-list-item:not(:last-child) {
+  margin-right: 0;
+}
 
-
+.menu-list-link.menu-start::after {
+  height: 4px;
+  }
 
 /* --------------mobile styles--------- */
 
