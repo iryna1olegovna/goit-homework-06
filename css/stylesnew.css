@@ -80,6 +80,20 @@ button {
   color: #ffffff;
 }
 
+button:hover,
+button:focus {
+    color: #ffffff; 
+}
+
+.button-order{
+  font-family: "Roboto", sans-serif
+}
+
+.button-order:hover,
+.button-order:focus{
+  background-color: #404BBF
+}
+
 .section {
   padding: 96px 0;
 }
